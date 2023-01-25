@@ -3,7 +3,7 @@ let checkedNumber = 2;
 
 while(checkedNumber < 30) {
     isPrime = true;
-    for (let j = 2; j < i; j++) {
+    for (let j = 2; j < checkedNumber; j++) {
         if(checkedNumber % j == 0) {
             isPrime = false;
             break;
