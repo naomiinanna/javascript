@@ -115,7 +115,7 @@ function factorialOfNumberRecursive(number) {
 console.log(factorialOfNumberRecursive(5));
 
 //13
-function callFunction(number, func) {
+function callFunction(number, method) {
     return fun(number*2);
 }
 
@@ -123,3 +123,15 @@ function fun(number) {
     return "i was called and the number is " + number;
 }
 console.log(callFunction(4, fun));
+
+
+//HARD TASKS
+//2
+function raiseNumberByPowerOf(number) {
+
+}
+
+//3
+function callMe(number, method) {
+    return 
+}
