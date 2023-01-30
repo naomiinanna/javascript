@@ -1,0 +1,61 @@
+*{
+    background-color: grey;
+    overflow: hidden;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menuitems {
+    background-color: grey;
+    height: 80vh;
+    width: 80vw;
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menuitems.visible {
+    display: flex;
+}
+
+a:hover {
+    color: antiquewhite;
+    font-weight: bold;
+    opacity: 60%;
+}
+
+
+
+a{
+    font-size: 40px;
+    color: #222;
+    text-decoration: none;
+}
+
+.button {
+    background-color: rgb(192, 188, 188);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 5px;
+    border-radius: 10%;
+}
+
+.bars {
+    background-color: #222;
+    width: 40px;
+    height: 5px;
+    border-radius: 15%;
+}
+
+.clicked {
+    background-color: #222;
+}
+
