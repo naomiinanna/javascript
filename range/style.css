@@ -2,10 +2,23 @@
     background-color: rgb(254, 254, 186);
 }
 
-input {
+.slider {
+    -webkit-appearance: none;
+    background: grey;
     width: 100%;
-    height: 10%;
-    color: aquamarine;
+    height: 10px;
+    margin: 50px;
+    outline: none;
+    opacity: 70%;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: goldenrod;
+    border-radius: 50%;
 }
 
 .wrapper {
@@ -18,7 +31,6 @@ input {
 }
 
 .box {
-    background-color: var(--randomColor);
     height: 100px;
     width: 100px;
     border-radius: 10%;

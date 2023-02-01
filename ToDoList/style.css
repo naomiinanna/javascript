@@ -1,0 +1,80 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: azure;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(72, 69, 69);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    margin: auto;
+    width: 80%;
+    height: 100%;
+
+    padding: 40px;
+
+    background-color: rgb(176, 238, 217);
+    border: 2px solid grey;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+
+    background-color: azure;
+
+    border: none;
+    border-radius: 2%;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+li {
+    width: 100%;
+}
+
+.delete-button {
+    font-family: inherit;
+    font-size: inherit;
+    margin-left: 20px;
+    background-color: rgb(251, 203, 197);
+    border-radius: 10%;
+
+    float: right;
+}
+
+input[type = submit] {
+    background-color: green;
+}
+
+
+.priority-item-1{
+    background-color: rgb(240, 119, 119);
+}
+
+.priority-item-2{
+    background-color: rgb(249, 249, 161);
+}
+
+.priority-item-3{
+    background-color: rgb(188, 248, 188);
+}

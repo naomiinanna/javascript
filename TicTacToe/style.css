@@ -1,0 +1,34 @@
+.board {
+    height: 600px;
+    width: 600px;
+    display: flex;
+}
+
+.board__cell {
+    height: 200px;
+    width: 200px;
+    border: 2px solid #222;
+}
+
+.board__column {
+    height: 200px;
+    width: 200px;
+}
+
+.column__button {
+    height: 150px;
+    width: 150px;
+}
+
+.click {
+}
+
+.board__cell.visible_playerOne {
+    display: flex;
+    background-color: #222;
+}
+
+.board__cell.visible_playerTwo {
+    display: flex;
+    background-color: rgb(66, 189, 55);
+}
