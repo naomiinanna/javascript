@@ -1,5 +1,6 @@
 html, body {
     background-color: antiquewhite;
+    justify-content: center;
 }
 
 .board {
@@ -17,13 +18,6 @@ html, body {
 .board__column {
     height: 200px;
     width: 200px;
-}
-
-.column__button {
-
-}
-
-.click {
 }
 
 .board__cell.visible_playerOne {

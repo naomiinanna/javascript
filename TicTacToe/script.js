@@ -39,6 +39,8 @@ function createBoard(width, height) {
                         if(checkWin(board, currentPlayer)) {
                             const $finishText = document.createElement('div');
                             $finishText.classList.add('finish');
+
+                            //innerText?
                             $finishText.setAttribute('finish', 'Player won');
                             $board.appendChild($finishText);
                             console.log('you won');
