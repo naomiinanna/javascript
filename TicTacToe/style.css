@@ -1,3 +1,7 @@
+html, body {
+    background-color: antiquewhite;
+}
+
 .board {
     height: 600px;
     width: 600px;
@@ -16,19 +20,22 @@
 }
 
 .column__button {
-    height: 150px;
-    width: 150px;
+
 }
 
 .click {
 }
 
 .board__cell.visible_playerOne {
-    display: flex;
-    background-color: #222;
+    background-color: rgb(234, 225, 171);
 }
 
 .board__cell.visible_playerTwo {
-    display: flex;
-    background-color: rgb(66, 189, 55);
+    background-color: rgb(55, 164, 189);
+}
+
+.finish {
+    height: 200px;
+    width: 200px;
+    font-size: 40px;
 }
