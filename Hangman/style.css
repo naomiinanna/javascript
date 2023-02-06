@@ -1,0 +1,97 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: blanchedalmond;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.game {
+    height: 80vh;
+    width: 80vh;
+    background-color: antiquewhite;
+    padding: 20px;
+    
+}
+
+.lettersRightWord {
+    display: flex;
+    width: auto;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex {
+    padding-top: 100px;
+    height: 1.2em;
+    width: 10em;
+    border-bottom: 10px solid #222;
+    text-align: center;
+    font-size: 80px;
+}
+
+.flex p {
+    display: none;
+}
+
+.flex.visible {
+    display: flex;
+}
+
+
+form {
+    width: auto;
+    height: 100px;
+    padding-top: 80px;
+}
+
+input {
+    font-size: 30px;
+    border-style: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input[type = submit] {
+    background-color: #222;
+    color: antiquewhite;
+    width: 200px;
+    height: 50px;
+
+}
+
+input#letter {
+    border-bottom: 1px solid #222;
+    height: 50px;
+    background-color: inherit;
+
+}
+
+.usedLetters {
+    display: flex;
+    flex-direction: column;
+}
+
+.used {
+    display: flex;
+    gap: 10px;
+}
+
+.used li {
+    font-size: 30px;
+    text-align: center;
+    background-color: aliceblue;
+    width: 50px;
+    height: auto;
+    list-style: none;
+    border-radius: 10%;
+}
+
+.countdown {
+    padding-top: 30px;
+    font-size: 30px;
+}

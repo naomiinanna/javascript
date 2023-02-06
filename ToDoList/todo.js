@@ -9,6 +9,9 @@ function displayItems() {
         element.remove();
     });
 
+    //same one-line:
+    //forEach(li => li.remove());
+
     for (itemIndex in toDoItems) {
         const newItem = document.createElement('li');
         newItem.innerText = toDoItems[itemIndex].text;
@@ -37,8 +40,6 @@ function displayItems() {
         newItem.appendChild(deleteButton);
         toDoList.appendChild(newItem);
     }
-
-
     console.log(toDoItems);
 }
 

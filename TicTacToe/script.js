@@ -15,6 +15,8 @@ function createBoard(width, height) {
 
 ((board, currentPlayer) => {
     function renderBoard(board, currentPlayer) {
+        const $wrapper = document.createElement('div');
+        $wrapper.classList.add('wrapper');
         const $board = document.createElement('div');
         $board.classList.add('board');
 
@@ -35,24 +37,29 @@ function createBoard(width, height) {
                     if(addCircle(x, y, board, currentPlayer)) {
                         updateBoard(board);
 
-                        //check win
                         if(checkWin(board, currentPlayer)) {
                             const $finishText = document.createElement('div');
                             $finishText.classList.add('finish');
 
-                            //innerText?
-                            $finishText.setAttribute('finish', 'Player won');
-                            $board.appendChild($finishText);
-                            console.log('you won');
-                        };
+                            let tempPlayer;
+                            if(currentPlayer == 1) {
+                                tempPlayer = 'X';
+                            }else{
+                                tempPlayer = 'O';
+                            }
+
+                            $finishText.innerText = 'Player ' + tempPlayer + ' won';
+                            $wrapper.appendChild($finishText);
+                            //END GAME HERE?
+                        }
                         currentPlayer = currentPlayer == 1 ? 2 : 1;
                     }
                 });                  
             }
             $board.appendChild($column);
         }
-        document.body.appendChild($board);
-
+        document.body.appendChild($wrapper);
+        $wrapper.appendChild($board);
     }
 
     function updateBoard(board) {
@@ -63,8 +70,10 @@ function createBoard(width, height) {
                     continue;
                 }
                 if(board[x][y] == 1) {
+                    $cell.innerText = 'x';
                     $cell.classList.add('visible_playerOne');
                 }else{
+                    $cell.innerText = 'o';
                     $cell.classList.add('visible_playerTwo');
                 }
             }            
@@ -81,21 +90,16 @@ function createBoard(width, height) {
     }
 
     function checkWin(board, currentPlayer) {
-        let win = 
-        (board[0][0] && board[0][1] && board[0][2]) == currentPlayer || 
-        (board[1][0] && board[1][1] && board[1][2]) == currentPlayer ||
-        (board[2][0] && board[2][1] && board[2][2]) == currentPlayer ||
+        return ( 
+        (board[0][0] == currentPlayer && board[0][1] == currentPlayer && board[0][2]) == currentPlayer ||
+        (board[2][0] == currentPlayer && board[2][1] == currentPlayer && board[2][2]) == currentPlayer ||
+        (board[1][0] == currentPlayer && board[1][1] == currentPlayer && board[1][2]) == currentPlayer ||
 
-        (board[0][0] && board[1][0] && board[2][0]) == currentPlayer ||
-        (board[0][1] && board[1][1] && board[2][1]) == currentPlayer ||
-        (board[0][2] && board[1][2] && board[2][2]) == currentPlayer ||
+        (board[0][0] == currentPlayer && board[1][0] == currentPlayer && board[2][0]) == currentPlayer ||
+        (board[0][1] == currentPlayer && board[1][1] == currentPlayer && board[2][1]) == currentPlayer ||
+        (board[0][2] == currentPlayer && board[1][2] == currentPlayer && board[2][2]) == currentPlayer ||
 
-        (board[0][0] && board[1][1] && board[2][2]) == currentPlayer; 
-
-        if(win) {
-            return true;
-        }
-        return false;
+        (board[0][0] == currentPlayer && board[1][1] == currentPlayer && board[2][2]) == currentPlayer);
     }
 
     window,addEventListener('DOMContentLoaded', () => renderBoard(board, currentPlayer));

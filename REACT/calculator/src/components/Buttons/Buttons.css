@@ -1,0 +1,27 @@
+.buttons{
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 0;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+}
+
+button:first-child{
+    width: 300px;
+    background-color: beige;
+}
+
+button:last-child{
+    width: 300px;
+    background-color: beige;
+}
+
+.operate {
+    background-color: bisque;
+}

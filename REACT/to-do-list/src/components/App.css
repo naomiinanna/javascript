@@ -1,0 +1,24 @@
+html, body {
+  width: 100vw;
+  background-color: azure;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(72, 69, 69);
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+
+  padding: 40px;
+
+  background-color: rgb(183, 201, 194);
+  border: 2px solid grey;
+}

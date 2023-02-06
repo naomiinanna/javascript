@@ -3,6 +3,19 @@ html, body {
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 100px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    opacity: 40%;
+    flex-direction: column;
+}
+
 .board {
     height: 600px;
     width: 600px;
@@ -10,6 +23,10 @@ html, body {
 }
 
 .board__cell {
+    text-align: center;
+    font-size: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     height: 200px;
     width: 200px;
     border: 2px solid #222;
@@ -21,15 +38,17 @@ html, body {
 }
 
 .board__cell.visible_playerOne {
-    background-color: rgb(234, 225, 171);
+    background-color: rgb(252, 210, 210);
 }
 
 .board__cell.visible_playerTwo {
-    background-color: rgb(55, 164, 189);
+    background-color: rgb(131, 196, 211);
 }
 
 .finish {
+    text-align: center;
+    margin-top: 50px;
     height: 200px;
-    width: 200px;
+    width: 600px;
     font-size: 40px;
 }
