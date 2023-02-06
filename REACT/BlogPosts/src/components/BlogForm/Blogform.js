@@ -6,9 +6,12 @@ function Blogform(props) {
     const [author, setAuthor] = useState('');
     const [blogtext, setBlogtext] = useState('');
 
+    const POST = {author, title, blogtext};
+
     const onSubmit = e => {
         e.preventDefault();
-        props.addPost({title, author, blogtext});
+        props.addPost(POST);
+        console.log(POST)
     }
 
     return (

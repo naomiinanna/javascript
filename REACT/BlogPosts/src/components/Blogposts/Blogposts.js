@@ -18,7 +18,10 @@ function Blogposts(props) {
                 <h1 className="title">MORE ABOUT PLANTS</h1>
                 <p className="blogtext">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </li>
-            {props.posts.map((value, i) => <li key={i}>{value}
+                {props.posts.map((value, i) => <li key={i}>
+                <p className="author">{value.author}</p>
+                <h1 className="title">{value.title}</h1>
+                <p className="blogtext">{value.blogtext}</p>
             </li>)}
         </ul>
     );
