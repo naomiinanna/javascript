@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react";
+import Blogform from './BlogForm/Blogform';
+import Blogposts from './Blogposts/Blogposts';
 
 function App() {
+
+  const [posts, setPosts] = useState([]);
+
   return (
-    <div className="App">
+    <div className="container">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>WELCOME TO MY BLOG</h1>
       </header>
+      <div className='wrapper'>
+        <Blogposts posts={posts}/>
+      </div>
+      <div className='post__wrapper'>
+        <Blogform addPost={post => setPosts([...posts, post])}
+        />
+      </div>
     </div>
   );
 }

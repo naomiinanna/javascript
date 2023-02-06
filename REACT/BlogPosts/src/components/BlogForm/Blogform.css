@@ -1,0 +1,25 @@
+.blogform {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    width: 100%;
+    background-color: white;
+    opacity: 90%;
+    justify-content: center;
+
+    border-radius: 1%;
+
+}
+
+input{
+    border: none;
+    font-size: 20px;
+    margin: 10px;
+
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#textarea{
+    height: 200px;
+}

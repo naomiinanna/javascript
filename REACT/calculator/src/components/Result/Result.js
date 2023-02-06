@@ -1,9 +1,6 @@
 import './Result.css';
 
 function Result(props) {
-
-
-
     return (
         <div className='result'>
             <p>{props.resultP}</p>
