@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  max-width: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/2400843/pexels-photo-2400843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.container {
+  width: 80%;
+  height: auto;
+  background-color: antiquewhite;
+  margin: auto;
+  opacity: 40%;
+  border-radius: 8.5em;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+}
+
+.container.colortheme--dark {
+  background-color: grey;
+}
+
+.container.colortheme--pink {
+  background-color: pink;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+button[class="toggleColorTheme"] {
+  background-color: black;
+  color: antiquewhite;
+}
+
+.post__wrapper {
+  margin: 50px;
+}

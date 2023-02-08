@@ -1,0 +1,15 @@
+input[value="logout"] {
+    font-weight: bold;
+    background-color: inherit;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.logout__form {
+    margin-right: 30px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: inherit;
+}

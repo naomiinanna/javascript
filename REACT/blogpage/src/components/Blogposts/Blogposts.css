@@ -1,0 +1,38 @@
+.blogposts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  
+  li{
+    width: 350px;
+    height: 350px;
+    background-color: aliceblue;
+    list-style: none;
+    overflow: hidden;
+
+    border-radius: 50%;
+    padding: 50px;
+  
+    transition: 0.5s ease;
+  }
+
+  li h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  
+  li:hover {
+    background-color: aliceblue;
+    opacity: 100%;
+    transform: scale(1.04);
+
+    cursor: pointer;
+  }
+
+  li:hover *{
+
+
+  }
