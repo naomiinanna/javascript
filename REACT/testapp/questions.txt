@@ -1,0 +1,18 @@
+Q3: Hypertext Markup Language
+Q4: head, body
+Q5: h1 is biggest, h2 is the one after h1, and h3 next
+Q6: <a href="#link">Linktext</a>
+Q7: ul has dots, ol has numbers
+Q8: <img src="#imagepath"></img>
+Q9: 	<table> 
+		<tr><th></th></tr>	//table head
+		<tr><td></td></tr> 	//table data
+	</table>
+Q10: <input></input>
+Q12: <link rel="stylesheet" href="style.css">
+Q13: relative, absolute, fixed
+Q14: (How does using relative positioning differ from using absolute positioning? )
+Q15: 	-> document is an object
+	-> object: contains properties -> key and value
+	-> represents visiualisation 
+Q16: (How does the DOM represent an HTML document?)
